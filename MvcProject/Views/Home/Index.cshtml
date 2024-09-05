@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eğitim Teması</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+        }
+
+        .header {
+            text-align: center;
+            padding: 20px 0;
+            width: 100%;
+        }
+
+        .globe, .text {
+            flex: 1;
+            padding: 20px;
+        }
+
+            .globe img {
+                width: 100%;
+                height: auto;
+                max-width: 500px;
+                border-radius: 8px;
+            }
+
+        .text {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .cta-button {
+            margin-top: 20px;
+            background-color: #f39c12;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            width: fit-content;
+        }
+
+            .cta-button:hover {
+                background-color: #e67e22;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Eğitim Bizim İşimiz</h1>
+        </div>
+        <div class="globe">
+            <img src="~/lib/img/istockphoto-1249992593-1024x1024.jpg" alt="Dünya haritası">
+        </div>
+        <div class="text">
+            <p>İŞİMİZİ DOĞRU YAPIYORUZ.</p>
+            <p>Eğitim bizim işimiz.</p>
+            <a asp-controller="Course" asp-action="Apply" class="cta-button">Kayıt yapın</a>
+        </div>
+    </div>
+</body>
+</html>
